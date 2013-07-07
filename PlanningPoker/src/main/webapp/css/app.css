@@ -1,0 +1,29 @@
+.container{
+	width: 100%;
+}
+
+.container div {
+	border: 3px black solid;
+	float: left;
+	width: 58px;
+	height: 86px;
+	background-size:58px 86px;
+	background-repeat:no-repeat;		
+}
+
+.back {background-image:url('/img/back.png');}
+.c {background-image:url('/img/c.png');}
+.c1 {background-image:url('/img/c1.png');}
+.c2 {background-image:url('/img/c2.png');}
+.c3 {background-image:url('/img/c3.png');}
+.c5 {background-image:url('/img/c5.png');}
+.c8 {background-image:url('/img/c8.png');}
+.c13 {background-image:url('/img/c13.png');}
+.c20 {background-image:url('/img/c20.png');}
+.c99 {background-image:url('/img/c99.png');}
+.c999 {background-image:url('/img/c999.png');}
+
+.break {
+	clear: both;
+	border: 0px;		
+}

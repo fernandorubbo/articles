@@ -1,0 +1,6 @@
+permitir fornecer uma permissão para o new play
+tratar exceptions
+validações
+testes e polimento
+usar jquery
+colocar no github
