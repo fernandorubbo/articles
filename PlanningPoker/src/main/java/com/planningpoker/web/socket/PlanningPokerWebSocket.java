@@ -113,6 +113,8 @@ public class PlanningPokerWebSocket {
 		final String playerName = params.get("playerName")[0];
 
 		out.println("==>> On Error " + session.getRemoteAddress() + " - " + gameId + " - " + playerName + " - " + cause.getMessage());
+		
+		new WebSocketObserver(session).onError(cause);
 	}
 
 	@OnWebSocketClose

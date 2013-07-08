@@ -15,4 +15,6 @@ public interface Observer {
 	void showResult(Play play);
 	
 	void playerIsOffline(Player player);
+	
+	void onError(Throwable cause);
 }

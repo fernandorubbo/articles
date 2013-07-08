@@ -1,4 +1,5 @@
-permitir fornecer uma permissão para o new play
+o id do player não pode ser o nome.. ta gerando muito problema com dois usuário com o mesmo nome. Refatorar tudo
+permitir fornecer uma descrição para o new play
 tratar exceptions
 validações
 testes e polimento

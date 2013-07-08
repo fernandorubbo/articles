@@ -23,7 +23,8 @@ function init() {
    			reDrawResultDiv();
    		},
    		gameHasBeenFinished : function(param) {
-   			// TODO				
+   			alert("Manager has finished this Game! Good by!!!")
+   		 	window.location.href = "/index.jsp"
    		},
    		playerHasVoteInCurrentPlay : function(player) {
    			document.getElementById(player.name).className = "back";			
@@ -42,7 +43,11 @@ function init() {
    			// remove visualmente
    			var div = document.getElementById(player.name);
    			div.parentNode.removeChild(div);
-   		}				
+   		},
+   		onError : function(param) {
+   			alert(param.message)
+   		 	window.location.href = "/index.jsp"
+   		}
    	};
    	
     function PPWebSocket() {

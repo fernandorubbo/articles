@@ -53,6 +53,15 @@ public class WebSocketObserver implements Observer {
 	public void playerIsOffline(Player player) {
 		send(new JSFunction("playerIsOffline", player));
 	}
+	
+	@Override
+	public void onError(Throwable e) {
+		Throwable cause = e;
+		while(cause.getCause()!=null){
+			cause = cause.getCause();
+		}
+		send(new JSFunction("onError", "message", cause.getMessage()));
+	}
 
 	private void send(JSFunction jsFunction) {
 		try {
