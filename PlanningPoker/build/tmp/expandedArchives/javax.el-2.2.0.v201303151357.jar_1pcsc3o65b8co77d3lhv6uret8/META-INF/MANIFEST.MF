@@ -1,0 +1,122 @@
+Manifest-Version: 1.0
+Bundle-Vendor: %bundleProvider
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-Name: %bundleName
+Bundle-SymbolicName: javax.el
+Eclipse-SourceReferences: scm:cvs:pserver:dev.eclipse.org:/cvsroot/too
+ ls:org.eclipse.orbit/javax.el;tag=v201303151357
+Export-Package: javax.el;version="2.2.0"
+Bundle-Version: 2.2.0.v201303151357
+Bundle-ManifestVersion: 2
+Import-Package: javax.servlet;version="2.5.0",javax.servlet.http;versi
+ on="2.5.0"
+
+Name: javax/el/CompositeELResolver$CompositeIterator.class
+SHA1-Digest: 6pVV//yjts3M5J+ROq5S9Ald/yk=
+
+Name: javax/el/ArrayELResolver.class
+SHA1-Digest: sfDtewo70IbwyM3OkiH+lFBvCa8=
+
+Name: javax/el/ELUtil.class
+SHA1-Digest: fefIJj5SFh2onPiEwIP6BFxHtek=
+
+Name: javax/el/ELContext.class
+SHA1-Digest: xoF/fWOrJs+Pkdju38MxKZyxlcw=
+
+Name: javax/el/ValueExpression.class
+SHA1-Digest: WLKFqBuodjlj3t4rvVKtQIhXPK8=
+
+Name: javax/el/ListELResolver.class
+SHA1-Digest: XiquBbyxYu/aMVYfg/w8csJnNaE=
+
+Name: javax/el/MapELResolver.class
+SHA1-Digest: 8g7IgRzp/88HvYkinx/GowOXeTI=
+
+Name: javax/el/BeanELResolver$BeanProperties.class
+SHA1-Digest: 4LXRaXtL3WPJfCOrrU3plKaEbmo=
+
+Name: javax/el/BeanELResolver$BPSoftReference.class
+SHA1-Digest: qzfcHwQpxpcJrk36jRTJcw4NNDs=
+
+Name: javax/el/ELResolver.class
+SHA1-Digest: uCORqyjoMowuSSOwr9dUfTx6Nk0=
+
+Name: javax/el/MethodInfo.class
+SHA1-Digest: dg1XEO+YR3DHPtl5NYvnUGiCJpQ=
+
+Name: javax/el/PropertyNotWritableException.class
+SHA1-Digest: mgACNa803sGECziQsP1VSpLqGRA=
+
+Name: plugin.properties
+SHA1-Digest: 9kUJk8nA3j+ErtGgbrapwSzsuTY=
+
+Name: javax/el/ELUtil$1.class
+SHA1-Digest: woZ/vJDKZOu5OQkK1ZBldGvEllw=
+
+Name: javax/el/FunctionMapper.class
+SHA1-Digest: nC1rkzeAy4M5ELoDn3cMCStfKU4=
+
+Name: about_files/LICENSE_CDDL.txt
+SHA1-Digest: yS+NaHusQahfaERHqIRuonOeUCI=
+
+Name: javax/el/ResourceBundleELResolver.class
+SHA1-Digest: 3092AnbT4BPEsyYd/IN6kBvIes0=
+
+Name: javax/el/BeanELResolver.class
+SHA1-Digest: BJRcEa0Yt8oRw6p9SgvfG3cd1Ac=
+
+Name: javax/el/ELContextListener.class
+SHA1-Digest: aUU2xMLneao/j54kyOZQWreHL6k=
+
+Name: javax/el/MethodNotFoundException.class
+SHA1-Digest: vwyXrEt/eQSHDKsZLiDZSTkikG4=
+
+Name: javax/el/PrivateMessages.properties
+SHA1-Digest: K2nAF0t7GW+eyFcyfddiWtDKcGQ=
+
+Name: javax/el/BeanELResolver$1.class
+SHA1-Digest: ACUMPOGTUwbtpdVwWbtv8BCvisA=
+
+Name: javax/el/ELException.class
+SHA1-Digest: Td+No0OD6EY3iDt0tL5vO2UxR4s=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: javax/el/PropertyNotFoundException.class
+SHA1-Digest: k4NyvXZ8j2qJnVkIsjoNE8QX2t8=
+
+Name: javax/el/BeanELResolver$BeanProperty.class
+SHA1-Digest: jn7SrB+z5hYPvVPntKJP8l2oqcQ=
+
+Name: javax/el/ELContextEvent.class
+SHA1-Digest: Ah2DliEVOb8oxkqUCTig7NKYn3U=
+
+Name: javax/el/FactoryFinder.class
+SHA1-Digest: G23cinY28wkxvCQmqVSvlQ/cajk=
+
+Name: about.html
+SHA1-Digest: HL0xITUv+2QYNRJY9Hx2RWoCip8=
+
+Name: javax/el/ExpressionFactory.class
+SHA1-Digest: uEJCyOyJxReIdM/jfVZLyRuiwkc=
+
+Name: javax/el/CompositeELResolver.class
+SHA1-Digest: NOzLDcZYFQrl26B46j2ef19s+Po=
+
+Name: javax/el/Expression.class
+SHA1-Digest: aT/Ce9YQzvIKNKr/AEjNet3XmfU=
+
+Name: javax/el/MethodExpression.class
+SHA1-Digest: HfZvuec0XlCtQ+Rs4hN3brromgY=
+
+Name: javax/el/ValueReference.class
+SHA1-Digest: 54m3gde8cH5FctbPXG2GKxF39Jo=
+
+Name: javax/el/VariableMapper.class
+SHA1-Digest: o5o9Q95NBQrz/ApV4UkYDtXDMIM=
+
+Name: javax/el/BeanELResolver$SoftConcurrentHashMap.class
+SHA1-Digest: zCaQsVaj+QP190s+5XszhcTfKBI=
+

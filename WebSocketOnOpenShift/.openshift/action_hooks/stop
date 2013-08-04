@@ -1,0 +1,16 @@
+#!/bin/bash
+source $OPENSHIFT_CARTRIDGE_SDK_BASH
+
+# The logic to stop your application should be put in this script.
+
+echo "Stopping WebSocketExample............."
+
+if [ -z "$(ps -ef | grep WebSocketExample.war | grep -v grep)" ]
+then
+    client_result "WebSocketExample Application is already stopped"
+else
+	echo "Killing WebSocketExample............."
+    kill `ps -ef | grep WebSocketExample.war | grep -v grep | awk '{ print $2 }'` > /dev/null 2>&1
+fi
+
+echo "Stopped2 WebSocketExample............."

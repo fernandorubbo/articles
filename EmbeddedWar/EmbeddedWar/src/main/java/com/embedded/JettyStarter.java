@@ -1,5 +1,7 @@
 package com.embedded;
 
+import java.net.InetAddress;
+import java.net.InetSocketAddress;
 import java.net.URL;
 import java.security.ProtectionDomain;
 
@@ -28,8 +30,22 @@ public class JettyStarter {
         webapp.setContextPath("/");
         webapp.setWar(location.toExternalForm());
         
-        // starts the embedded server and bind it on 8081 port
-		Server server = new Server(8081);
+        // starts the embedded server and bind it on port
+
+        //$OPENSHIFT_DIY_IP:$OPENSHIFT_DIY_PORT
+        String host = System.getenv("OPENSHIFT_DIY_IP");
+        if(host==null){
+        	host = "127.0.0.1";
+        }
+
+        String port = System.getenv("OPENSHIFT_DIY_PORT");
+        if(port==null){
+        	port = "8080";
+        }
+        System.out.println(host + ":" + port);
+        
+        InetSocketAddress sa = new InetSocketAddress(InetAddress.getByName(host), Integer.valueOf(port));
+		Server server = new Server(sa);
         server.setHandler(webapp);        
         server.start();
         server.join();	

@@ -1,0 +1,45 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven Bundle Plugin
+Built-By: joakim
+Build-Jdk: 1.7.0_21
+Implementation-Vendor: Eclipse.org - Jetty
+Implementation-Version: 9.0.4.v20130625
+url: http://www.eclipse.org/jetty
+Export-Package: org.eclipse.jetty.annotations;uses:="org.eclipse.jetty
+ .webapp,org.eclipse.jetty.util.resource,org.eclipse.jetty.servlet,org
+ .eclipse.jetty.server.handler,javax.servlet.annotation,org.eclipse.je
+ tty.plus.annotation,javax.servlet,org.eclipse.jetty.util.log,org.ecli
+ pse.jetty.util,org.objectweb.asm,org.objectweb.asm.commons,org.eclips
+ e.jetty.security,javax.annotation.security,javax.annotation,org.eclip
+ se.jetty.server,javax.naming,org.eclipse.jetty.plus.jndi,org.eclipse.
+ jetty.util.component,org.eclipse.jetty.util.security,javax.servlet.ht
+ tp";version="9.0.4"
+Bundle-Classpath: .
+Tool: Bnd-1.15.0
+Bundle-Name: Jetty :: Servlet Annotations
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-Copyright: Copyright (c) 2008-2013 Mort Bay Consulting Pty. Ltd.
+Bundle-Vendor: Eclipse Jetty Project
+Bundle-Version: 9.0.4.v20130625
+Bnd-LastModified: 1372177633991
+Bundle-ManifestVersion: 2
+Bundle-Description: Annotation support for deploying servlets in jetty.
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0, http://www
+ .eclipse.org/org/documents/epl-v10.php
+Import-Package: javax.annotation;version="[1.1,2)",javax.annotation.se
+ curity;version="[1.1,2)",javax.naming,javax.servlet;version="2.6.0",j
+ avax.servlet.annotation;version="2.6.0",javax.servlet.http;version="2
+ .6.0",org.eclipse.jetty.plus.annotation;version="[9.0,10)",org.eclips
+ e.jetty.plus.jndi;version="[9.0,10)",org.eclipse.jetty.security;versi
+ on="[9.0,10)",org.eclipse.jetty.server;version="[9.0,10)",org.eclipse
+ .jetty.server.handler;version="[9.0,10)",org.eclipse.jetty.servlet;ve
+ rsion="[9.0,10)",org.eclipse.jetty.util;version="[9.0,10)",org.eclips
+ e.jetty.util.component;version="[9.0,10)",org.eclipse.jetty.util.log;
+ version="[9.0,10)",org.eclipse.jetty.util.resource;version="[9.0,10)"
+ ,org.eclipse.jetty.util.security;version="[9.0,10)",org.eclipse.jetty
+ .webapp;version="[9.0,10)",org.objectweb.asm;version="[3.1,4)",org.ob
+ jectweb.asm.commons;version="[3.1,4)"
+Bundle-SymbolicName: org.eclipse.jetty.annotations
+Bundle-DocURL: http://www.eclipse.org/jetty
+

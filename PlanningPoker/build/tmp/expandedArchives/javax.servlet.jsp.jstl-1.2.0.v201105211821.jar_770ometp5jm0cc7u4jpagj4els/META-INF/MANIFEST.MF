@@ -1,0 +1,103 @@
+Manifest-Version: 1.0
+Bundle-Vendor: %bundleProvider
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-Name: %bundleName
+Bundle-SymbolicName: javax.servlet.jsp.jstl
+Eclipse-SourceReferences: scm:cvs:pserver:dev.eclipse.org:/cvsroot/too
+ ls:org.eclipse.orbit/javax.servlet.jsp.jstl;tag=v201105211821
+Export-Package: javax.servlet.jsp.jstl.core;version="1.2.0",javax.serv
+ let.jsp.jstl.fmt;version="1.2.0",javax.servlet.jsp.jstl.sql;version="
+ 1.2.0",javax.servlet.jsp.jstl.tlv;version="1.2.0"
+Bundle-Version: 1.2.0.v201105211821
+Bundle-ManifestVersion: 2
+Import-Package: javax.el;version="2.1.0",javax.servlet;version="2.5.0"
+ ,javax.servlet.http;version="2.5.0",javax.servlet.jsp;version="2.1.0"
+ ,javax.servlet.jsp.el;version="2.1.0",javax.servlet.jsp.jstl.core;ver
+ sion="1.2.0",javax.servlet.jsp.jstl.fmt;version="1.2.0",javax.servlet
+ .jsp.jstl.sql;version="1.2.0",javax.servlet.jsp.jstl.tlv;version="1.2
+ .0",javax.servlet.jsp.resources;version="2.1.0",javax.servlet.jsp.tag
+ ext;version="2.1.0",javax.servlet.resources;version="2.5.0"
+
+Name: plugin.properties
+SHA1-Digest: AZehH5fck4+zzXMqmwQLx78c3No=
+
+Name: javax/servlet/jsp/jstl/core/LoopTagSupport.class
+SHA1-Digest: vy9CMxd+kxlPAm5lXNX6MozX+Hk=
+
+Name: javax/servlet/jsp/jstl/core/LoopTag.class
+SHA1-Digest: Ms5JCk+yqPzFYH+jx7Of8D6MZFk=
+
+Name: about_files/LICENSE_CDDL.txt
+SHA1-Digest: yS+NaHusQahfaERHqIRuonOeUCI=
+
+Name: javax/servlet/jsp/jstl/sql/SQLExecutionTag.class
+SHA1-Digest: IrhJQRm/G8/Z3INEkSXCzYI6GsA=
+
+Name: javax/servlet/jsp/jstl/core/IteratedExpression.class
+SHA1-Digest: 6eV30sKTYQq9VJVrwaFoaXs5q5M=
+
+Name: javax/servlet/jsp/jstl/fmt/LocaleSupport.class
+SHA1-Digest: YC9PdapQTlyfEE78LKBlR3N9oiA=
+
+Name: javax/servlet/jsp/jstl/tlv/PermittedTaglibsTLV$PermittedTaglibsH
+ andler.class
+SHA1-Digest: kIkQeTGF9sBODFesPKycReG2dps=
+
+Name: javax/servlet/jsp/jstl/fmt/LocalizationContext.class
+SHA1-Digest: /ugedxxBB7COUzjVbrXdVEFCdtc=
+
+Name: javax/servlet/jsp/jstl/core/IteratedValueExpression.class
+SHA1-Digest: j/j1Bc2v9AcCJ2df4070a1/8y3Y=
+
+Name: javax/servlet/jsp/jstl/tlv/ScriptFreeTLV.class
+SHA1-Digest: M6AX8y4kUyk3ZqAyzBaiSjqMc6c=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: javax/servlet/jsp/jstl/tlv/PermittedTaglibsTLV.class
+SHA1-Digest: 9cKbWzwcpjZCxW/WbXBwwzHciP8=
+
+Name: javax/servlet/jsp/jstl/core/LoopTagStatus.class
+SHA1-Digest: Wizm0CePAd4QrYGesk6y8ElZZww=
+
+Name: javax/servlet/jsp/jstl/core/IteratedExpression$1.class
+SHA1-Digest: 1COdxErwBumPE8Kdbs07MKxriWo=
+
+Name: javax/servlet/jsp/jstl/tlv/ScriptFreeTLV$1.class
+SHA1-Digest: 4PAxGgHGmqLj+RTZBp7VhCtF4RE=
+
+Name: javax/servlet/jsp/jstl/sql/Result.class
+SHA1-Digest: MiG4zEnc9zCym0p5XD2wqm3hLfo=
+
+Name: javax/servlet/jsp/jstl/sql/ResultImpl.class
+SHA1-Digest: lJSWPDQbCFL6PUSiOrcL1yA2TNo=
+
+Name: about.html
+SHA1-Digest: MFWPFpsB3yT9UfKSSVSCO5zJV98=
+
+Name: javax/servlet/jsp/jstl/core/LoopTagSupport$1Status.class
+SHA1-Digest: glMvaENc/69hVODZIhY85pEazBU=
+
+Name: javax/servlet/jsp/jstl/core/IndexedValueExpression.class
+SHA1-Digest: pd7Pneac4esmy265l9UHTP69K2Y=
+
+Name: javax/servlet/jsp/jstl/tlv/PermittedTaglibsTLV$1.class
+SHA1-Digest: MsEQB91pKBPee5bRuPOfzPOlcLQ=
+
+Name: about_files/LICENSE_ASL20.txt
+SHA1-Digest: K4uBUimqimHkg/tLoFiLi2xJGJA=
+
+Name: javax/servlet/jsp/jstl/core/ConditionalTagSupport.class
+SHA1-Digest: N7qw1H9ze79IPB+eXFIdftvzEAk=
+
+Name: javax/servlet/jsp/jstl/sql/ResultSupport.class
+SHA1-Digest: zN45NC6Mfo6Qf7X63MmtIblOfDU=
+
+Name: javax/servlet/jsp/jstl/tlv/ScriptFreeTLV$MyContentHandler.class
+SHA1-Digest: lNYmRiOmNypiypbUhLU3Yvi29Xo=
+
+Name: javax/servlet/jsp/jstl/core/Config.class
+SHA1-Digest: JsF+03XRJaooOHbU++/AiwW9/PI=
+

@@ -1,0 +1,42 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven Bundle Plugin
+Built-By: joakim
+Build-Jdk: 1.7.0_21
+Implementation-Vendor: Eclipse.org - Jetty
+Implementation-Version: 9.0.4.v20130625
+url: http://www.eclipse.org/jetty
+Export-Package: org.eclipse.jetty.websocket.client;version="9.0",org.e
+ clipse.jetty.websocket.client.masks;version="9.0",org.eclipse.jetty.w
+ ebsocket.client.io;version="9.0",org.eclipse.jetty.websocket.client.m
+ ux;version="9.0"
+Bundle-Classpath: .
+Tool: Bnd-1.15.0
+Bundle-Name: Jetty :: Websocket :: Client
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-Copyright: Copyright (c) 2008-2013 Mort Bay Consulting Pty. Ltd.
+Bundle-Vendor: Eclipse Jetty Project
+Bundle-Version: 9.0.4.v20130625
+Bnd-LastModified: 1372178170087
+Bundle-ManifestVersion: 2
+Bundle-Description: Administrative parent pom for Jetty modules
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0, http://www
+ .eclipse.org/org/documents/epl-v10.php
+Import-Package: javax.net.ssl,org.eclipse.jetty.io;version="[9.0,10.0)
+ ",org.eclipse.jetty.io.ssl;version="[9.0,10.0)",org.eclipse.jetty.uti
+ l;version="[9.0,10.0)",org.eclipse.jetty.util.component;version="[9.0
+ ,10.0)",org.eclipse.jetty.util.log;version="[9.0,10.0)",org.eclipse.j
+ etty.util.ssl;version="[9.0,10.0)",org.eclipse.jetty.util.thread;vers
+ ion="[9.0,10.0)",org.eclipse.jetty.websocket.api;version="[9.0,10.0)"
+ ,org.eclipse.jetty.websocket.api.extensions;version="[9.0,10.0)",org.
+ eclipse.jetty.websocket.common;version="[9.0,10.0)",org.eclipse.jetty
+ .websocket.common.events;version="[9.0,10.0)",org.eclipse.jetty.webso
+ cket.common.extensions;version="[9.0,10.0)",org.eclipse.jetty.websock
+ et.common.extensions.mux;version="[9.0,10.0)",org.eclipse.jetty.webso
+ cket.common.extensions.mux.add;version="[9.0,10.0)",org.eclipse.jetty
+ .websocket.common.extensions.mux.op;version="[9.0,10.0)",org.eclipse.
+ jetty.websocket.common.io;version="[9.0,10.0)",org.eclipse.jetty.webs
+ ocket.common.io.http;version="[9.0,10.0)"
+Bundle-SymbolicName: org.eclipse.jetty.websocket.client
+Bundle-DocURL: http://www.eclipse.org/jetty
+

@@ -15,6 +15,21 @@ repositories {
 configurations {
 	embeddedJetty
 }
+
+configurations.all {
+	resolutionStrategy {
+	  eachDependency { DependencyResolveDetails details ->
+		  println details.requested.name + "-" + details.requested.version
+		  println details.target.name + "-" + details.target.version
+	  }
+ 
+	  // cache dynamic versions for 10 minutes
+	  cacheDynamicVersionsFor 10*60, 'seconds'
+	  // don't cache changing modules at all
+	  cacheChangingModulesFor 0, 'seconds'
+	}
+  }
+
 dependencies {
 	embeddedJetty 'org.eclipse.jetty:jetty-servlet:+'
 	embeddedJetty 'org.eclipse.jetty:jetty-webapp:+'
@@ -24,6 +39,20 @@ dependencies {
 	embeddedJetty 'org.eclipse.jetty.websocket:websocket-server:+'
 	
 	compile 'org.glassfish:javax.json:+'
+}
+
+
+task mytask << {
+	println configurations.embeddedJetty.resolutionStrategy.forcedModules
+	/*
+	configurations.collect {
+		println '--' + it
+		it.collect(){
+			println it
+			println it.name
+		}
+	}
+	*/
 }
 
 war.baseName = 'WebSockets'

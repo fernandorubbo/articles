@@ -1,0 +1,252 @@
+Manifest-Version: 1.0
+Bundle-Description: Javax El RI el-impl-2.2.4
+Bundle-Vendor: %bundleProvider
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-Name: %bundleName
+Bundle-SymbolicName: com.sun.el
+Eclipse-SourceReferences: scm:cvs:pserver:dev.eclipse.org:/cvsroot/too
+ ls:org.eclipse.orbit/com.sun.el;tag=v201303151357
+Export-Package: com.sun.el;version="2.2.0"
+Bundle-Version: 2.2.0.v201303151357
+Bundle-ManifestVersion: 2
+Import-Package: javax.el;version="2.2.0",javax.servlet.http;version="2
+ .5.0"
+
+Name: com/sun/el/parser/AstCompositeExpression.class
+SHA1-Digest: bi1rMy+PJzSAB4vxDu49W3+D2T4=
+
+Name: com/sun/el/lang/ExpressionBuilder.class
+SHA1-Digest: Kim769MwRc2LdHBm0xyBLsyP9Fg=
+
+Name: com/sun/el/ExpressionFactoryImpl.class
+SHA1-Digest: 5NSqbr1GfFvyowwYI9wMhSuPvRE=
+
+Name: com/sun/el/lang/ELArithmetic$BigDecimalDelegate.class
+SHA1-Digest: WwYnSzCQOknTUEeFWY1dtMLcuPo=
+
+Name: com/sun/el/parser/Token.class
+SHA1-Digest: qNUF5/jJGn1Q7rDsjAKaQ4DmSN4=
+
+Name: com/sun/el/parser/AstDeferredExpression.class
+SHA1-Digest: mE9bbpRm2tRZO4r06dbIO8wsaG0=
+
+Name: com/sun/el/parser/AstFunction.class
+SHA1-Digest: T9CMbDuXA3KyogN2A/mlpI4YysQ=
+
+Name: com/sun/el/lang/VariableMapperFactory.class
+SHA1-Digest: juDTG/QfJqn07fy3r+bKhyRIN20=
+
+Name: com/sun/el/parser/AstLessThan.class
+SHA1-Digest: IptHM+OFj3pV1D9R/Oi3gOedqdo=
+
+Name: com/sun/el/parser/AstEmpty.class
+SHA1-Digest: WwcU1qct0hW6GLuJ4DAjrdzcPqs=
+
+Name: com/sun/el/lang/ExpressionBuilder$1.class
+SHA1-Digest: 7qvlO81NXV0umnZsRcB3NF4cN1c=
+
+Name: com/sun/el/parser/AstDiv.class
+SHA1-Digest: 6QfutwvhV+0ALafnhvgg3NoOeEc=
+
+Name: about_files/LICENSE_CDDL.txt
+SHA1-Digest: yS+NaHusQahfaERHqIRuonOeUCI=
+
+Name: com/sun/el/parser/AstNotEqual.class
+SHA1-Digest: 0tHkFC1Dvse3bF55jUou5C605Cw=
+
+Name: com/sun/el/parser/AstOr.class
+SHA1-Digest: XQnY8d4HSSpJhGfgwwy27wA01Q0=
+
+Name: com/sun/el/ValueExpressionImpl.class
+SHA1-Digest: DHCO2FCBCH001R7Z5cJmX9GL1eo=
+
+Name: com/sun/el/parser/NodeVisitor.class
+SHA1-Digest: c+18IKlyHOnvslSBQfDwZ3f4l4I=
+
+Name: com/sun/el/lang/ExpressionBuilder$NodeSoftReference.class
+SHA1-Digest: KUSG60F9mMD5WA2Y0vzgmzg5nnw=
+
+Name: com/sun/el/util/MessageFactory.class
+SHA1-Digest: g92sbI8MtldRG0cnTZhmsV6OWYA=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: com/sun/el/parser/AstNegative.class
+SHA1-Digest: 5vgJhVwFbPbhU2u97GjbkQ3VvfI=
+
+Name: com/sun/el/lang/ELSupport.class
+SHA1-Digest: tW7e8gigepSXrJmftG//Q4OUh10=
+
+Name: com/sun/el/lang/ELArithmetic$DoubleDelegate.class
+SHA1-Digest: /RvyZPW+wyR1b/fzlOFhJiNIx10=
+
+Name: com/sun/el/parser/SimpleCharStream.class
+SHA1-Digest: 2jDk+3cZXsWd9NCXso22brZzQ34=
+
+Name: com/sun/el/parser/AstFloatingPoint.class
+SHA1-Digest: RwNhZRVZ7xAnfluRnwXp5htzMr0=
+
+Name: com/sun/el/parser/AstGreaterThanEqual.class
+SHA1-Digest: 4OpZZJ07mD6NZfl8YFX48wSn/+k=
+
+Name: com/sun/el/lang/FunctionMapperImpl.class
+SHA1-Digest: IUpQVI/nAy9Dl4zfEuuiXOLZck4=
+
+Name: com/sun/el/parser/ELParser$LookaheadSuccess.class
+SHA1-Digest: ArBNHurQ9cgKPiL8+WDLXJWG7zk=
+
+Name: com/sun/el/lang/FunctionMapperFactory.class
+SHA1-Digest: iYs0/Uu7YkrQldx+Dp/q6sMUgmQ=
+
+Name: com/sun/el/parser/AstValue.class
+SHA1-Digest: i5wJrxKTTap39MRzrajeYzXqBuc=
+
+Name: com/sun/el/parser/AstEqual.class
+SHA1-Digest: RfF7adRFgt3EZq8XFexUHX2/vBU=
+
+Name: com/sun/el/lang/ELArithmetic$BigIntegerDelegate.class
+SHA1-Digest: EWH+zb3GJ5jLx8FHT8scm+tWnvM=
+
+Name: com/sun/el/parser/AstGreaterThan.class
+SHA1-Digest: N0NTCDJiFnGTkMDf0d7P3WJFEFI=
+
+Name: com/sun/el/parser/AstTrue.class
+SHA1-Digest: 3WEQpuyT3H73ztChiGl3JjknRkE=
+
+Name: com/sun/el/parser/AstMod.class
+SHA1-Digest: ngSeZ5+z7uWMVRquKPXEvmuhQKI=
+
+Name: com/sun/el/parser/AstString.class
+SHA1-Digest: AyK7+nLU9Jz5nXikH7M1vKvKtd4=
+
+Name: com/sun/el/lang/ELArithmetic.class
+SHA1-Digest: s7j+MQd+b9oyzTXuNV+ExwOPz3M=
+
+Name: com/sun/el/ValueExpressionLiteral.class
+SHA1-Digest: 77mjIyzyaXbC37loTgJ+yWGnmxk=
+
+Name: com/sun/el/MethodExpressionLiteral.class
+SHA1-Digest: xxFo1GpPflLpQmxPNysnXWO0J4w=
+
+Name: com/sun/el/parser/AstPlus.class
+SHA1-Digest: nGj4FTA4qS+nuzpGtDJYozzI5tE=
+
+Name: plugin.properties
+SHA1-Digest: YWQ9gpXnanTi8cBRPvev4wZXdMY=
+
+Name: com/sun/el/lang/VariableMapperImpl.class
+SHA1-Digest: XFPmnqRb8NO3QZuy3+loOE7boIU=
+
+Name: com/sun/el/parser/AstNot.class
+SHA1-Digest: 2SJFuDeYr9/q56ZT8ZMh547GtYU=
+
+Name: com/sun/el/lang/ELArithmetic$LongDelegate.class
+SHA1-Digest: urpUKY4Bm7Rbsmq7hICMzp7Nnmw=
+
+Name: com/sun/el/parser/AstChoice.class
+SHA1-Digest: 49SRt4hhDkPpaLs94e5A4MpGBjQ=
+
+Name: com/sun/el/parser/AstAnd.class
+SHA1-Digest: FyqQ3j5m/UtV0xsbjzONmXRsfKM=
+
+Name: com/sun/el/MethodExpressionImpl.class
+SHA1-Digest: FS84dDfHevBVhq1feYTJQe+lkUg=
+
+Name: com/sun/el/parser/AstBracketSuffix.class
+SHA1-Digest: m/Io4Me9/mK7oxk1X1nbyp7VVqo=
+
+Name: com/sun/el/parser/BooleanNode.class
+SHA1-Digest: EiBJrXwSxW8iIJ9VwlZzthzqwbQ=
+
+Name: com/sun/el/parser/AstIdentifier.class
+SHA1-Digest: wN4oOFSCe488RUAXPnYENlXGcCg=
+
+Name: com/sun/el/parser/AstMult.class
+SHA1-Digest: vfR4Vt6lvSwxbb5VeLIclEWLnV4=
+
+Name: com/sun/el/lang/FunctionMapperImpl$Function.class
+SHA1-Digest: 3g4mcWTbJ5OX8KcWd3mJrtEOKI0=
+
+Name: com/sun/el/parser/AstFalse.class
+SHA1-Digest: QC6tu8S6dGhIGPkpnVs5uGRugJk=
+
+Name: com/sun/el/parser/Node.class
+SHA1-Digest: gtGLRvEhtL5K+33hHwCLPnsITo0=
+
+Name: com/sun/el/parser/AstLiteralExpression.class
+SHA1-Digest: lMVD2Nsyb4M3zdvBULaiJ8Hoa4o=
+
+Name: com/sun/el/parser/ELParser.class
+SHA1-Digest: TdovUnlLicWcSIT0upZdzxwlDiw=
+
+Name: com/sun/el/lang/ExpressionBuilder$SoftConcurrentHashMap.class
+SHA1-Digest: hOK5kDXr76F3zZGeSl+4ft701tI=
+
+Name: about.html
+SHA1-Digest: hil4S9WcarcnTnC3LIDQmii9X1g=
+
+Name: com/sun/el/util/ReflectionUtil.class
+SHA1-Digest: lUnhXKhvYRI2La4fP+7Ne7Kn+Nw=
+
+Name: com/sun/el/parser/ArithmeticNode.class
+SHA1-Digest: d5V5kJnjK5EpM+dNOhgzP4kSD5s=
+
+Name: com/sun/el/parser/AstMinus.class
+SHA1-Digest: JuqaShyd8ycSOJu6Jk+8xcornio=
+
+Name: com/sun/el/lang/EvaluationContext.class
+SHA1-Digest: 19q1HQWatCDDdKZhNrw7DAhNjXs=
+
+Name: com/sun/el/parser/ELParser$1.class
+SHA1-Digest: IR4fL3o0ygO1j6hdHw/6rfjQtdo=
+
+Name: com/sun/el/parser/AstMethodArguments.class
+SHA1-Digest: xSGr8pKADspM2ko0Gq93X9hztJM=
+
+Name: com/sun/el/parser/SimpleNode.class
+SHA1-Digest: DOn5Di93NHtjg8mDMt8zDVk8P8w=
+
+Name: com/sun/el/parser/AstValue$Target.class
+SHA1-Digest: 3YIRoyAZVbKpE7V88zMpdObiU6I=
+
+Name: com/sun/el/parser/AstDynamicExpression.class
+SHA1-Digest: cDkkHO3aWZUlNVattysR4WZCyFg=
+
+Name: com/sun/el/parser/TokenMgrError.class
+SHA1-Digest: HIiUpikKOF18iKdGjYPqFRK4CBE=
+
+Name: com/sun/el/parser/JJTELParserState.class
+SHA1-Digest: y8coGk/JPcXt7JHYaE2Ma6T+PlA=
+
+Name: com/sun/el/parser/ELParserConstants.class
+SHA1-Digest: Q+n7BhsQDBLUFkOjDuFW7cT8dAo=
+
+Name: com/sun/el/parser/ELParser$JJCalls.class
+SHA1-Digest: JhTiWNPo+8hokqP3/AFyw4RYhl4=
+
+Name: com/sun/el/parser/AstNull.class
+SHA1-Digest: +/SuyuGpp6vUkvIX7H5sNFOYTJE=
+
+Name: com/sun/el/parser/AstDotSuffix.class
+SHA1-Digest: MfAwmT7wFixDiiXqRFOcOBfJLWo=
+
+Name: com/sun/el/parser/AstLessThanEqual.class
+SHA1-Digest: TDyEmvIt+hX8j4h0hKJswjx1ioc=
+
+Name: com/sun/el/parser/ELParserTreeConstants.class
+SHA1-Digest: Aof1jYcLqlkMrcj/0lDGxWdJxPM=
+
+Name: com/sun/el/parser/ELParserTokenManager.class
+SHA1-Digest: mUlINbSpOP4uDVBYoy6osrB3oL0=
+
+Name: com/sun/el/Messages.properties
+SHA1-Digest: 9GcRs3UGvR1kX0wf1Ub3EkrhnNE=
+
+Name: com/sun/el/parser/ParseException.class
+SHA1-Digest: S/TWKTMdRVuYsE8czFI/hlICxco=
+
+Name: com/sun/el/parser/AstInteger.class
+SHA1-Digest: LOHXbp2RvaVWzzhRgFXaFVpBwIY=
+

@@ -1,0 +1,67 @@
+Manifest-Version: 1.0
+Bundle-Vendor: %bundleProvider
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-Name: %bundleName
+Bundle-SymbolicName: javax.annotation
+Eclipse-SourceReferences: scm:cvs:pserver:dev.eclipse.org:/cvsroot/too
+ ls:org.eclipse.orbit/javax.annotation;tag=v201108011116
+Export-Package: javax.annotation;version="1.1.0",javax.annotation.secu
+ rity;version="1.1.0",javax.annotation.sql;version="1.1.0"
+Bundle-Version: 1.1.0.v201108011116
+Bundle-ManifestVersion: 2
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: javax/annotation/security/DeclareRoles.class
+SHA1-Digest: j4TG/KD8FqB8vcaEZqxXUqFRHyY=
+
+Name: javax/annotation/PreDestroy.class
+SHA1-Digest: UYgjf8zS6ddPyBJgOTQ+QS+5/Bs=
+
+Name: javax/annotation/Resources.class
+SHA1-Digest: qwt4/UhWWGtZmC73yzAJ3EGLVxE=
+
+Name: javax/annotation/security/PermitAll.class
+SHA1-Digest: GFTWT2xMQVdTOcSOyqK0yAeu0/s=
+
+Name: javax/annotation/sql/DataSourceDefinition.class
+SHA1-Digest: IoOmS0AjQIA5M2Ghiny1PxAHtIE=
+
+Name: javax/annotation/Resource$AuthenticationType.class
+SHA1-Digest: fK4R2uXZM6kKPALcOKk4hC7Fy7g=
+
+Name: about.html
+SHA1-Digest: My3T6qQ8WpOvlDD4kjHId5BCzaE=
+
+Name: plugin.properties
+SHA1-Digest: 9vujjYp8kMWWtmtmQ/Id5OmiXy0=
+
+Name: javax/annotation/Generated.class
+SHA1-Digest: dr0bLk8iQMPMKvDUAuK35SiaXr8=
+
+Name: javax/annotation/ManagedBean.class
+SHA1-Digest: CpROk7p5gR1+DntfM5SA/K8PK0A=
+
+Name: about_files/LICENSE_CDDL.txt
+SHA1-Digest: yS+NaHusQahfaERHqIRuonOeUCI=
+
+Name: javax/annotation/security/DenyAll.class
+SHA1-Digest: yXRb+hSoHCeVGbQqorZ1dQnmEfA=
+
+Name: javax/annotation/PostConstruct.class
+SHA1-Digest: X/fgvrYGcOwJdrWD99YJPnxmdGE=
+
+Name: javax/annotation/sql/DataSourceDefinitions.class
+SHA1-Digest: 4jD6328F8ZQ0x8OsMyXWQTCylmY=
+
+Name: javax/annotation/security/RolesAllowed.class
+SHA1-Digest: 6jFWTN2Sz4DD/yfvZVHuza5q6WI=
+
+Name: javax/annotation/security/RunAs.class
+SHA1-Digest: F6nMBOj21f7ng4UEyo3qBOPD0cQ=
+
+Name: javax/annotation/Resource.class
+SHA1-Digest: 5LhBC/1RVfUY0vlv9xZ+G+gR0F8=
+

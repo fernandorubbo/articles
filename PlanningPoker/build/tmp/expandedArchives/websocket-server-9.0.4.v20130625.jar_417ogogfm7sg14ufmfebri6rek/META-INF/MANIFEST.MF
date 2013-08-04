@@ -1,0 +1,41 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven Bundle Plugin
+Built-By: joakim
+Build-Jdk: 1.7.0_21
+Implementation-Vendor: Eclipse.org - Jetty
+Implementation-Version: 9.0.4.v20130625
+url: http://www.eclipse.org/jetty
+Export-Package: org.eclipse.jetty.websocket.server;version="9.0",org.e
+ clipse.jetty.websocket.server.mux;version="9.0"
+Bundle-Classpath: .
+Tool: Bnd-1.15.0
+Bundle-Name: Jetty :: Websocket :: Server
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-Copyright: Copyright (c) 2008-2013 Mort Bay Consulting Pty. Ltd.
+Bundle-Vendor: Eclipse Jetty Project
+Bundle-Version: 9.0.4.v20130625
+Bnd-LastModified: 1372178221002
+Bundle-ManifestVersion: 2
+Bundle-Description: Administrative parent pom for Jetty modules
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0, http://www
+ .eclipse.org/org/documents/epl-v10.php
+Import-Package: javax.servlet;version="[2.6.0,3.0)",javax.servlet.http
+ ;version="[2.6.0,3.0)",org.eclipse.jetty.http;version="[9.0,10.0)",or
+ g.eclipse.jetty.io;version="[9.0,10.0)",org.eclipse.jetty.server;vers
+ ion="[9.0,10.0)",org.eclipse.jetty.server.handler;version="[9.0,10.0)
+ ",org.eclipse.jetty.util;version="[9.0,10.0)",org.eclipse.jetty.util.
+ component;version="[9.0,10.0)",org.eclipse.jetty.util.log;version="[9
+ .0,10.0)",org.eclipse.jetty.util.thread;version="[9.0,10.0)",org.ecli
+ pse.jetty.websocket.api;version="[9.0,10.0)",org.eclipse.jetty.websoc
+ ket.api.extensions;version="[9.0,10.0)",org.eclipse.jetty.websocket.c
+ ommon;version="[9.0,10.0)",org.eclipse.jetty.websocket.common.events;
+ version="[9.0,10.0)",org.eclipse.jetty.websocket.common.extensions;ve
+ rsion="[9.0,10.0)",org.eclipse.jetty.websocket.common.extensions.mux;
+ version="[9.0,10.0)",org.eclipse.jetty.websocket.common.extensions.mu
+ x.add;version="[9.0,10.0)",org.eclipse.jetty.websocket.common.io;vers
+ ion="[9.0,10.0)",org.eclipse.jetty.websocket.servlet;version="[9.0,10
+ .0)"
+Bundle-SymbolicName: org.eclipse.jetty.websocket.server
+Bundle-DocURL: http://www.eclipse.org/jetty
+

@@ -52,7 +52,25 @@ function init() {
    	
     function PPWebSocket() {
    		var ready = false;
-	   	var socket = new WebSocket("ws://localhost:8080/planningpoker?gameId=" + id + "&playerName=" + playerName);
+   		
+   		<%
+   		
+   		String host = System.getenv("OPENSHIFT_DIY_IP");
+        if(host==null){
+        	host = "127.0.0.1";
+        } else {
+        	host = "planningpoker-datamaio.rhcloud.com";
+        }
+
+        String port = System.getenv("OPENSHIFT_DIY_PORT");
+        if(port==null){
+        	port = "8080";
+        }else {
+        	port = "8000";
+        }
+        %>
+   		
+	   	var socket = new WebSocket("ws://<%=host + ":" + port%>/planningpoker?gameId=" + id + "&playerName=" + playerName);
 	   	socket.onopen = function(){
 	   		console.log('Connection opened');
 	   		ready = true;
