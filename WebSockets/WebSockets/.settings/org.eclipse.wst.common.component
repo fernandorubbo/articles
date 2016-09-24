@@ -9,7 +9,7 @@
 		<wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
 		<wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
 		<wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/resources"/>
-		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/Fernando/.gradle/caches/artifacts-15/filestore/org.glassfish/javax.json/1.0/bundle/af5da48125e7fddc7ecd47e300101e599175d47d/javax.json-1.0.jar">
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib//home/fernando/.gradle/caches/modules-2/files-2.1/org.glassfish/javax.json/1.0.4/3178f73569fd7a1e5ffc464e680f7a8cc784b85a/javax.json-1.0.4.jar">
 			<dependency-type>uses</dependency-type>
 		</dependent-module>
 	</wb-module>

@@ -24,11 +24,7 @@ public class EventObserver extends Observer {
 			}
 		} catch (IOException e) {
 			if (session.isOpen()) {
-				try {
-					session.close();
-				} catch (IOException e1) {
-					e1.printStackTrace();
-				}
+				session.close();
 			}
 		}
 	}

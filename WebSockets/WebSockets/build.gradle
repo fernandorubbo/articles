@@ -1,14 +1,23 @@
-// Tells gradle it is a war project which will be imported into eclipse wtp
 apply plugin: 'war'
 apply plugin: 'eclipse-wtp'
+//apply from: 'https://raw.github.com/akhikhl/gretty/master/pluginScripts/gretty.plugin'
 
-// Define souce code compatibility
+
 sourceCompatibility = 1.7
 targetCompatibility = 1.7
 
-// Use maven repository
 repositories {
     mavenCentral()
+}
+
+/*
+gretty {
+  servletContainer = 'jetty9'
+}
+*/
+
+wrapper {
+  	gradleVersion = '1.10'
 }
 
 // Fills out all dependencies which are necessary to start the embedded jetty into our war file

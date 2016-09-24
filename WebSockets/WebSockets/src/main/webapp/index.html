@@ -109,7 +109,7 @@
 		}
 		redraw();
 		
-		var socket = new WebSocket("ws://<%=request.getLocalAddr()%>:<%=request.getServerPort()%>/dashboard");
+		var socket = new WebSocket("ws://localhost:8081/dashboard");
 		
 		function dateReviver(key, value) {
 		    if (key == 'date') {
