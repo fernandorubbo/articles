@@ -1,32 +1,69 @@
-// Tells gradle it is a war project which will be imported into eclipse wtp
 apply plugin: 'war'
 apply plugin: 'eclipse-wtp'
+//apply from: 'https://raw.github.com/akhikhl/gretty/master/pluginScripts/gretty.plugin'
 
-// Define souce code compatibility
+
 sourceCompatibility = 1.7
 targetCompatibility = 1.7
 
-// Use maven repository
 repositories {
     mavenCentral()
+}
+
+/*
+gretty {
+  servletContainer = 'jetty9'
+}
+*/
+
+wrapper {
+  	gradleVersion = '1.10'
 }
 
 // Fills out all dependencies which are necessary to start the embedded jetty into our war file
 configurations {
 	embeddedJetty
 }
+
+configurations.all {
+	resolutionStrategy {
+	  eachDependency { DependencyResolveDetails details ->
+		  println details.requested.name + "-" + details.requested.version
+		  println details.target.name + "-" + details.target.version
+	  }
+ 
+	  // cache dynamic versions for 10 minutes
+	  cacheDynamicVersionsFor 10*60, 'seconds'
+	  // don't cache changing modules at all
+	  cacheChangingModulesFor 0, 'seconds'
+	}
+  }
+
 dependencies {
-	embeddedJetty 'org.eclipse.jetty:jetty-servlet:+'
-	embeddedJetty 'org.eclipse.jetty:jetty-webapp:+'
-	embeddedJetty 'org.eclipse.jetty:jetty-jsp:+'
-	embeddedJetty 'org.eclipse.jetty:jetty-annotations:+'
+	embeddedJetty 'org.eclipse.jetty:jetty-servlet:9.2+'
+	embeddedJetty 'org.eclipse.jetty:jetty-webapp:9.2+'
+	embeddedJetty 'org.eclipse.jetty:jetty-jsp:9.2+'	
+	embeddedJetty 'org.eclipse.jetty:jetty-annotations:9.2+'
 	// add support for jetty implementation of websockets
-	embeddedJetty 'org.eclipse.jetty.websocket:websocket-server:+'
+	embeddedJetty 'org.eclipse.jetty.websocket:websocket-server:9.2+'
 	
 	
 	compile 'org.glassfish:javax.json:+'
 }
 
+
+task mytask << {
+	println configurations.embeddedJetty.resolutionStrategy.forcedModules
+	/*
+	configurations.collect {
+		println '--' + it
+		it.collect(){
+			println it
+			println it.name
+		}
+	}
+	*/
+}
 
 war.baseName = 'PlanningPoker'
 war {

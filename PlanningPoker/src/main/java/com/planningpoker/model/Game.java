@@ -47,7 +47,7 @@ public class Game  {
 		for (Player p : players) {
 			if(p.getName().equals(name)){
 				if(p.isOnline())
-					throw new IllegalArgumentException("Já existe um Jogador com o nome " + name);
+					throw new IllegalArgumentException("Ja existe um Jogador com o nome " + name);
 				else {
 					players.remove(p);
 				}

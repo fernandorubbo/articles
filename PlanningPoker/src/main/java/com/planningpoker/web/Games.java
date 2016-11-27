@@ -31,7 +31,7 @@ public class Games {
 	
 	public static synchronized Game getGameByManagerName(String playerName){
 		for(Game game : HOLDER.values()){
-			// FIXME: esta lógica vai dar pau quando tiver dois managers em dois games diferentes com o mesmo nome
+			// FIXME: esta logica vai dar pau quando tiver dois managers em dois games diferentes com o mesmo nome
 			if( game.getManager().getName().equals(playerName) ) {
 				return game;
 			}

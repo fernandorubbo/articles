@@ -5,6 +5,7 @@ import static java.lang.System.out;
 import java.io.StringReader;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
+import java.util.List;
 import java.util.Map;
 
 import javax.json.Json;
@@ -27,10 +28,10 @@ public class PlanningPokerWebSocket {
 
 	@OnWebSocketConnect
 	public void onOpen(final Session session) {
-		final Map<String, String[]> params = session.getUpgradeRequest().getParameterMap();
-		String[] id = params.get("gameId");
-		final Integer gameId = id!=null && !"null".equals(id[0]) ? Integer.valueOf(id[0]) : null;
-		final String playerName = params.get("playerName")[0];
+		final Map<String, List<String>> params = session.getUpgradeRequest().getParameterMap();
+		List<String> id = params.get("gameId");
+		final Integer gameId = id!=null && !"null".equals(id.get(0)) ? Integer.valueOf(id.get(0)) : null;
+		final String playerName = params.get("playerName").get(0);
 		
 		out.println("==>> Opening connection " + session.getRemoteAddress() + " - " + gameId + " - " + playerName);
 
@@ -40,17 +41,17 @@ public class PlanningPokerWebSocket {
 		} else {
 			final Game game = Games.getGame(gameId);
 			if(game==null)
-				throw new IllegalArgumentException("Game com id " + gameId + " não existe ou já foi finalizado!");
+				throw new IllegalArgumentException("Game com id " + gameId + " nao existe ou ja foi finalizado!");
 			game.addPlayer(playerName, observer);			
 		}		
 	}
 
 	@OnWebSocketMessage
 	public void onMessage(final Session session, final String json) {
-		final Map<String, String[]> params = session.getUpgradeRequest().getParameterMap();
-		String[] id = params.get("gameId");
-		final Integer gameId = id!=null && !"null".equals(id[0]) ? Integer.valueOf(id[0]) : null;
-		final String playerName = params.get("playerName")[0];
+		final Map<String, List<String>> params = session.getUpgradeRequest().getParameterMap();
+		List<String> id = params.get("gameId");
+		final Integer gameId = id!=null && !"null".equals(id.get(0)) ? Integer.valueOf(id.get(0)) : null;
+		final String playerName = params.get("playerName").get(0);
 		
 		out.println("==>> Opening connection " + session.getRemoteAddress() + " - " + gameId + " - " + playerName);
 		
@@ -107,10 +108,10 @@ public class PlanningPokerWebSocket {
 	
 	@OnWebSocketError
 	public void onErro(final Session session, final Throwable cause) {
-		final Map<String, String[]> params = session.getUpgradeRequest().getParameterMap();
-		String[] id = params.get("gameId");
-		final Integer gameId = id!=null && !"null".equals(id[0]) ? Integer.valueOf(id[0]) : null;
-		final String playerName = params.get("playerName")[0];
+		final Map<String, List<String>> params = session.getUpgradeRequest().getParameterMap();
+		List<String> id = params.get("gameId");
+		final Integer gameId = id!=null && !"null".equals(id.get(0)) ? Integer.valueOf(id.get(0)) : null;
+		final String playerName = params.get("playerName").get(0);
 
 		out.println("==>> On Error " + session.getRemoteAddress() + " - " + gameId + " - " + playerName + " - " + cause.getMessage());
 		
@@ -119,10 +120,10 @@ public class PlanningPokerWebSocket {
 
 	@OnWebSocketClose
 	public void onClose(final Session session, int x, String text) {
-		final Map<String, String[]> params = session.getUpgradeRequest().getParameterMap();
-		String[] id = params.get("gameId");
-		final Integer gameId = id!=null && !"null".equals(id[0]) ? Integer.valueOf(id[0]) : null;
-		final String playerName = params.get("playerName")[0];
+		final Map<String, List<String>> params = session.getUpgradeRequest().getParameterMap();
+		List<String> id = params.get("gameId");
+		final Integer gameId = id!=null && !"null".equals(id.get(0)) ? Integer.valueOf(id.get(0)) : null;
+		final String playerName = params.get("playerName").get(0);
 
 		out.println("==>> Closing connection " + session.getRemoteAddress() + " - " + gameId + " - " + playerName);
 

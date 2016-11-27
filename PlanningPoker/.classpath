@@ -1,15 +1,196 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/main/java">
+		<attributes>
+			<attribute name="FROM_GRADLE_MODEL" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="src" path="src/main/resources"/>
 	<classpathentry kind="src" path="src/test/java"/>
 	<classpathentry kind="src" path="src/test/resources"/>
-	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry exported="true" kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
-	<classpathentry exported="true" kind="con" path="org.springsource.ide.eclipse.gradle.classpathcontainer">
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="con" path="org.eclipse.buildship.core.gradleclasspathcontainer"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container" exported="true"/>
+	<classpathentry kind="con" path="org.springsource.ide.eclipse.gradle.classpathcontainer" exported="true">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER" exported="true"/>
+	<classpathentry sourcepath="/home/fernando/.gradle/caches/modules-2/files-2.1/org.glassfish/javax.json/1.0.4/ef782abad0d3f1d30644c4023a6bbc6fe371e23a/javax.json-1.0.4-sources.jar" kind="lib" path="/home/fernando/.gradle/caches/modules-2/files-2.1/org.glassfish/javax.json/1.0.4/3178f73569fd7a1e5ffc464e680f7a8cc784b85a/javax.json-1.0.4.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/fernando/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-servlet/9.4.0.RC2/4236cebef57baa0b08814c7d677646a3e369ad57/jetty-servlet-9.4.0.RC2-sources.jar" kind="lib" path="/home/fernando/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-servlet/9.4.0.RC2/d0f3dafa98a0828a73b5a64359f2d1e9efd16795/jetty-servlet-9.4.0.RC2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/fernando/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-webapp/9.4.0.RC2/c97b20c83baa24a0e773d94f346e3b479dd76de3/jetty-webapp-9.4.0.RC2-sources.jar" kind="lib" path="/home/fernando/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-webapp/9.4.0.RC2/92249e2913580931e3e3e8e32f1ab7a0c55c9bac/jetty-webapp-9.4.0.RC2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/fernando/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-jsp/9.3.0.M1/ce04f285f5b0309d6678a016f8ccd066834f3e29/jetty-jsp-9.3.0.M1-sources.jar" kind="lib" path="/home/fernando/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-jsp/9.3.0.M1/7bd690af7de1119bb0329d6f9decec7ee857f752/jetty-jsp-9.3.0.M1.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/fernando/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-annotations/9.4.0.RC2/35315b8a53e2133d45b9934a179de7c4ebeac024/jetty-annotations-9.4.0.RC2-sources.jar" kind="lib" path="/home/fernando/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-annotations/9.4.0.RC2/e468760e9a8f6ad9277465c099de520d3cbfe51b/jetty-annotations-9.4.0.RC2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/fernando/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/websocket-server/9.4.0.RC2/a5db2d35461240a1cd8272541ee04b5141ec4123/websocket-server-9.4.0.RC2-sources.jar" kind="lib" path="/home/fernando/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/websocket-server/9.4.0.RC2/b95d57f5b7aa1c8ae89b2b316632ff67ffc5e87a/websocket-server-9.4.0.RC2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/fernando/.gradle/caches/modules-2/files-2.1/org.mortbay.jetty/jsp-2.1/7.0.0pre2/99f13cb39369c2d6118540bf788f1f565ab9d756/jsp-2.1-7.0.0pre2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/fernando/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.1.0/ab3976d4574c48d22dc1abf6a9e8bd0fdf928223/javax.servlet-api-3.1.0-sources.jar" kind="lib" path="/home/fernando/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.1.0/3cd63d075497751784b2fa84be59432f4905bf7c/javax.servlet-api-3.1.0.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/fernando/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-util/9.4.0.RC2/47e9110be61ba59b06640202a1fe810da0e58657/jetty-util-9.4.0.RC2-sources.jar" kind="lib" path="/home/fernando/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-util/9.4.0.RC2/ddb907d38b83340b816caf5b54d5312ad450493/jetty-util-9.4.0.RC2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/fernando/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-io/9.4.0.RC2/d2dd2692efd874290ed41051cf1feed7bb1e7a80/jetty-io-9.4.0.RC2-sources.jar" kind="lib" path="/home/fernando/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-io/9.4.0.RC2/e13bc0f8342e5825420451699b19cee6128d4ac2/jetty-io-9.4.0.RC2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/fernando/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-http/9.4.0.RC2/1e8f5a2de9a52cff507ac75af59baa70dd9e99ee/jetty-http-9.4.0.RC2-sources.jar" kind="lib" path="/home/fernando/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-http/9.4.0.RC2/337c467706dd3f63576bbc2dbea06beceabcd4d9/jetty-http-9.4.0.RC2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/fernando/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-server/9.4.0.RC2/a40386ac7b04f0493c96bf885b235a539b97bd26/jetty-server-9.4.0.RC2-sources.jar" kind="lib" path="/home/fernando/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-server/9.4.0.RC2/99a105f825af761e0dd492cae9c846dd51798fdc/jetty-server-9.4.0.RC2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/fernando/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-security/9.4.0.RC2/9c72126d4086d68be0be75b4ec7256b4731ba258/jetty-security-9.4.0.RC2-sources.jar" kind="lib" path="/home/fernando/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-security/9.4.0.RC2/b2157588568e27e927f8939c0a2647ffcc0f0bb1/jetty-security-9.4.0.RC2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/fernando/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-xml/9.4.0.RC2/667b3e542fda8d6e93e765b45672f312f8fbbc0d/jetty-xml-9.4.0.RC2-sources.jar" kind="lib" path="/home/fernando/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-xml/9.4.0.RC2/292471f736705d1b75a8b63b1b0f6e0a68e217fa/jetty-xml-9.4.0.RC2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/fernando/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.toolchain/jetty-schemas/3.1.M0/e15af2e59c6415e2d722f174aa579fc02c653252/jetty-schemas-3.1.M0-sources.jar" kind="lib" path="/home/fernando/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.toolchain/jetty-schemas/3.1.M0/6179bafb6ed2eb029862356df6713078c7874f85/jetty-schemas-3.1.M0.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/fernando/.gradle/caches/modules-2/files-2.1/javax.servlet.jsp/javax.servlet.jsp-api/2.3.1/5aa9e2bf86d7a7d56cc24690b87ff29c1a1d2245/javax.servlet.jsp-api-2.3.1-sources.jar" kind="lib" path="/home/fernando/.gradle/caches/modules-2/files-2.1/javax.servlet.jsp/javax.servlet.jsp-api/2.3.1/95c630902565feda8155eb32d46064ef348435fc/javax.servlet.jsp-api-2.3.1.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/fernando/.gradle/caches/modules-2/files-2.1/org.glassfish/javax.el/3.0.1-b08/303fcd8c9ce98ccb708a20aaafb2ea1e8ef0b254/javax.el-3.0.1-b08-sources.jar" kind="lib" path="/home/fernando/.gradle/caches/modules-2/files-2.1/org.glassfish/javax.el/3.0.1-b08/8fa39d3901fc6ec8c0fff4ad4e48c26c4911c422/javax.el-3.0.1-b08.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/fernando/.gradle/caches/modules-2/files-2.1/org.glassfish.web/javax.servlet.jsp/2.3.2/d2ff0f10493f5538e8123cbfa723a1c9311fd6aa/javax.servlet.jsp-2.3.2-sources.jar" kind="lib" path="/home/fernando/.gradle/caches/modules-2/files-2.1/org.glassfish.web/javax.servlet.jsp/2.3.2/613f624102267b1397e845b3181a72273bd6f399/javax.servlet.jsp-2.3.2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/fernando/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.orbit/javax.servlet.jsp.jstl/1.2.0.v201105211821/3b9bbbf21e72c1e1feede7d74c4b9f619309713d/javax.servlet.jsp.jstl-1.2.0.v201105211821-sources.jar" kind="lib" path="/home/fernando/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.orbit/javax.servlet.jsp.jstl/1.2.0.v201105211821/db594f1c8fc00d536f6d135bd7f8a9a99a6b8eea/javax.servlet.jsp.jstl-1.2.0.v201105211821.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/fernando/.gradle/caches/modules-2/files-2.1/org.glassfish.web/javax.servlet.jsp.jstl/1.2.2/88f20e2e00fb058ae6dba12e7e59e348ef19115c/javax.servlet.jsp.jstl-1.2.2-sources.jar" kind="lib" path="/home/fernando/.gradle/caches/modules-2/files-2.1/org.glassfish.web/javax.servlet.jsp.jstl/1.2.2/5b2e83ef42b4eef0a7e41d43bb1d4b835f59ac7a/javax.servlet.jsp.jstl-1.2.2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/fernando/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.orbit/org.eclipse.jdt.core/3.8.2.v20130121/add6b2dc7e55094f98db1c8b0decd91e2cbbd337/org.eclipse.jdt.core-3.8.2.v20130121-sources.jar" kind="lib" path="/home/fernando/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.orbit/org.eclipse.jdt.core/3.8.2.v20130121/ebb04771ae21dec8682e4153e97404d9933a9c13/org.eclipse.jdt.core-3.8.2.v20130121.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/fernando/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-jndi/9.4.0.RC2/bab6c04cee45a733210c26f6b53a28140738f113/jetty-jndi-9.4.0.RC2-sources.jar" kind="lib" path="/home/fernando/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-jndi/9.4.0.RC2/b92f97ba9c0754bf4c0fcaab3d80a20e46e8148c/jetty-jndi-9.4.0.RC2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/fernando/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-plus/9.4.0.RC2/a34b3b1f586c7160370d6478a0b23011a268d57e/jetty-plus-9.4.0.RC2-sources.jar" kind="lib" path="/home/fernando/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-plus/9.4.0.RC2/3b9e4f14910bdb9e430f6f2cc20f3f32b6d81a2d/jetty-plus-9.4.0.RC2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/fernando/.gradle/caches/modules-2/files-2.1/javax.annotation/javax.annotation-api/1.2/ad18a02db08eaee697f812e333f692fc51129e4a/javax.annotation-api-1.2-sources.jar" kind="lib" path="/home/fernando/.gradle/caches/modules-2/files-2.1/javax.annotation/javax.annotation-api/1.2/479c1e06db31c432330183f5cae684163f186146/javax.annotation-api-1.2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/fernando/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/5.1/81e81bd6c20b965f88d0462e2559f8759fc6c26d/asm-5.1-sources.jar" kind="lib" path="/home/fernando/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/5.1/5ef31c4fe953b1fd00b8a88fa1d6820e8785bb45/asm-5.1.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/fernando/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-tree/5.1/81e81bd6c20b965f88d0462e2559f8759fc6c26d/asm-tree-5.1-sources.jar" kind="lib" path="/home/fernando/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-tree/5.1/87b38c12a0ea645791ead9d3e74ae5268d1d6c34/asm-tree-5.1.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/fernando/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-commons/5.1/81e81bd6c20b965f88d0462e2559f8759fc6c26d/asm-commons-5.1-sources.jar" kind="lib" path="/home/fernando/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-commons/5.1/25d8a575034dd9cfcb375a39b5334f0ba9c8474e/asm-commons-5.1.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/fernando/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/websocket-api/9.4.0.RC2/d18c9913d703f2668c24dfaf09365f78ceabfbe0/websocket-api-9.4.0.RC2-sources.jar" kind="lib" path="/home/fernando/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/websocket-api/9.4.0.RC2/bab4394d93da08a75404dfc43cef91a50ef340ce/websocket-api-9.4.0.RC2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/fernando/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/websocket-common/9.4.0.RC2/f02c834545be611db70147eb457cc71f237ab07b/websocket-common-9.4.0.RC2-sources.jar" kind="lib" path="/home/fernando/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/websocket-common/9.4.0.RC2/3be1a09b80ce040481e9c4fa93b3a1b3793e7231/websocket-common-9.4.0.RC2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/fernando/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/websocket-client/9.4.0.RC2/cd5d8aecac17cb08367cd58483b2d4e6cbbebadf/websocket-client-9.4.0.RC2-sources.jar" kind="lib" path="/home/fernando/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/websocket-client/9.4.0.RC2/80cc23b53572f5701562e25570292523f1922960/websocket-client-9.4.0.RC2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/fernando/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/websocket-servlet/9.4.0.RC2/e57e5682e5f7fdecab0662e7e15ef2bcae3b63a6/websocket-servlet-9.4.0.RC2-sources.jar" kind="lib" path="/home/fernando/.gradle/caches/modules-2/files-2.1/org.eclipse.jetty.websocket/websocket-servlet/9.4.0.RC2/c4000f9e50320d32d7db445a5a93dcec60245a9e/websocket-servlet-9.4.0.RC2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/fernando/.gradle/caches/modules-2/files-2.1/org.eclipse.jdt/core/3.1.1/88c83ce444cf46d02494da37c9fa1eebc9ce9cea/core-3.1.1.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/fernando/.gradle/caches/modules-2/files-2.1/org.mortbay.jetty/servlet-api-3.0/7.0.0pre2/432bdcd532d2b9566d08033a60dd6de5dc9bcaac/servlet-api-3.0-7.0.0pre2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/fernando/.gradle/caches/modules-2/files-2.1/org.mortbay.jetty/jsp-api-2.1/7.0.0pre2/c8a5a39afa10b7306ba0ee9e04f88b91b60cd53c/jsp-api-2.1-7.0.0pre2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/fernando/.gradle/caches/modules-2/files-2.1/ant/ant/1.6.5/9e0a847494563f35f9b02846a1c1eb4aa2ee5a9a/ant-1.6.5-sources.jar" kind="lib" path="/home/fernando/.gradle/caches/modules-2/files-2.1/ant/ant/1.6.5/7d18faf23df1a5c3a43613952e0e8a182664564b/ant-1.6.5.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
 </classpath>
