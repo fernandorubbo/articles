@@ -1,6 +1,6 @@
 package com.planningpoker.io;
 
-import javax.json.JsonObject;
+import jakarta.json.JsonObject;
 
 
 public interface JsonSerializable {
