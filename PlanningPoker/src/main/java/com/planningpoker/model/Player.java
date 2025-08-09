@@ -1,7 +1,7 @@
 package com.planningpoker.model;
 
-import javax.json.Json;
-import javax.json.JsonObject;
+import jakarta.json.Json;
+import jakarta.json.JsonObject;
 
 import com.planningpoker.io.JsonSerializable;
 import com.planningpoker.model.observer.Observer;
@@ -12,16 +12,16 @@ public class Player implements Comparable<Player>, JsonSerializable{
 	private boolean online = true;
 	private Game game;
 	private Observer observer;
-	
+
 	public Player(String name, Observer observer) {
 		this(name, observer, false);
 	}
-	
+
 	public Player(String name, Observer observer, boolean isManager) {
 		super();
 		this.name = name;
 		this.observer = observer;
-		this.manager = isManager;		
+		this.manager = isManager;
 	}
 
 	public String getName() {
@@ -35,12 +35,12 @@ public class Player implements Comparable<Player>, JsonSerializable{
 	public boolean isOnline() {
 		return online;
 	}
-	
+
 	public void offline() {
 		if(!game.isFinished()){
-			this.online  = false;	
+			this.online  = false;
 			notifyAboutPlayerOffline();
-			
+
 			if(isManager()) {
 				game.finish();
 			} else {
@@ -75,7 +75,7 @@ public class Player implements Comparable<Player>, JsonSerializable{
 	public void setObserver(Observer observer) {
 		this.observer = observer;
 	}
-	
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -83,7 +83,7 @@ public class Player implements Comparable<Player>, JsonSerializable{
 		result = prime * result + ((name == null) ? 0 : name.hashCode());
 		return result;
 	}
-	
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -100,7 +100,7 @@ public class Player implements Comparable<Player>, JsonSerializable{
 			return false;
 		return true;
 	}
-	
+
 	@Override
 	public int compareTo(Player o) {
 		return this.name.compareTo(o.name);
@@ -110,14 +110,14 @@ public class Player implements Comparable<Player>, JsonSerializable{
 	public String toString() {
 		return "Player [" + toJson() + "]";
 	}
-	
+
 	@Override
-	public JsonObject toJson() {		
+	public JsonObject toJson() {
 		return Json.createObjectBuilder()
 			.add("name", name )
-	    	.add("manager", manager)
-	    	.add("online", online )
-	    	.build();
+		.add("manager", manager)
+		.add("online", online )
+		.build();
 	}
 
 }
