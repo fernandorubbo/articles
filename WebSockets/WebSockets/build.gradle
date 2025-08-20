@@ -3,8 +3,10 @@ apply plugin: 'eclipse-wtp'
 //apply from: 'https://raw.github.com/akhikhl/gretty/master/pluginScripts/gretty.plugin'
 
 
-sourceCompatibility = 1.7
-targetCompatibility = 1.7
+java {
+    sourceCompatibility = 21
+    targetCompatibility = 21
+}
 
 repositories {
     mavenCentral()
@@ -40,32 +42,38 @@ configurations.all {
   }
 
 dependencies {
-	embeddedJetty 'org.eclipse.jetty:jetty-servlet:9.2+'
-	embeddedJetty 'org.eclipse.jetty:jetty-webapp:9.2+'
-	embeddedJetty 'org.eclipse.jetty:jetty-jsp:9.2+'	
-	embeddedJetty 'org.eclipse.jetty:jetty-annotations:9.2+'
-	// add support for jetty implementation of websockets
-	embeddedJetty 'org.eclipse.jetty.websocket:websocket-server:9.2+'
-	
-	compile 'org.glassfish:javax.json:+'
+    // Jetty 12
+    embeddedJetty 'org.eclipse.jetty.ee10:jetty-ee10-servlet:12.0.10'
+    embeddedJetty 'org.eclipse.jetty.ee10:jetty-ee10-webapp:12.0.10'
+    embeddedJetty 'org.eclipse.jetty.ee10:jetty-ee10-plus:12.0.10'
+    embeddedJetty 'org.eclipse.jetty.ee10:jetty-ee10-annotations:12.0.10'
+    embeddedJetty 'org.eclipse.jetty.ee10:jetty-ee10-apache-jsp:12.0.10'
+    embeddedJetty 'org.eclipse.jetty.ee10.websocket:jetty-ee10-websocket-jakarta-server:12.0.10'
+    implementation 'jakarta.websocket:jakarta.websocket-api:2.1.0'
+
+    // JSON library
+    implementation 'org.glassfish:jakarta.json:2.0.1'
 }
 
 
-task mytask << {
-	println configurations.embeddedJetty.resolutionStrategy.forcedModules
-	/*
-	configurations.collect {
-		println '--' + it
-		it.collect(){
-			println it
-			println it.name
+task mytask {
+	doLast {
+		println configurations.embeddedJetty.resolutionStrategy.forcedModules
+		/*
+		configurations.collect {
+			println '--' + it
+			it.collect(){
+				println it
+				println it.name
+			}
 		}
+		*/
 	}
-	*/
 }
 
-war.baseName = 'WebSockets'
+war.archiveBaseName = 'WebSockets'
 war {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 	// unzip and add all jetty dependencies into the root of our war file
 	from {configurations.embeddedJetty.collect {
 			project.zipTree(it)

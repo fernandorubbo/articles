@@ -3,8 +3,8 @@ apply plugin: 'war'
 apply plugin: 'eclipse-wtp'
 
 // Define souce code compatibility
-sourceCompatibility = 1.7
-targetCompatibility = 1.7
+sourceCompatibility = 21
+targetCompatibility = 21
 
 // Use maven repository
 repositories {
@@ -16,14 +16,17 @@ configurations {
 	embeddedJetty
 }
 dependencies {
-	embeddedJetty 'org.eclipse.jetty:jetty-servlet:+'
-	embeddedJetty 'org.eclipse.jetty:jetty-webapp:+'
-	embeddedJetty 'org.eclipse.jetty:jetty-jsp:+'
-	embeddedJetty 'org.eclipse.jetty:jetty-annotations:+'
+    // Jetty 12
+    embeddedJetty 'org.eclipse.jetty.ee10:jetty-ee10-servlet:12.0.10'
+    embeddedJetty 'org.eclipse.jetty.ee10:jetty-ee10-webapp:12.0.10'
+    embeddedJetty 'org.eclipse.jetty.ee10:jetty-ee10-plus:12.0.10'
+    embeddedJetty 'org.eclipse.jetty.ee10:jetty-ee10-annotations:12.0.10'
+    embeddedJetty 'org.eclipse.jetty.ee10:jetty-ee10-apache-jsp:12.0.10'
 }
 
-war.baseName = 'MyExecutableWar'
+war.archiveBaseName = 'MyExecutableWar'
 war {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 	// unzip and add all jetty dependencies into the root of our war file
 	from {configurations.embeddedJetty.collect {
 			project.zipTree(it)
