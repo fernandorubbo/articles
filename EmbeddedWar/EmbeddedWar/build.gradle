@@ -2,9 +2,10 @@
 apply plugin: 'war'
 apply plugin: 'eclipse-wtp'
 
-// Define souce code compatibility
-sourceCompatibility = 21
-targetCompatibility = 21
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
 
 // Use maven repository
 repositories {
@@ -36,7 +37,7 @@ war {
 	exclude "META-INF/*.SF", "META-INF/*.RSA", "about.html", "about_files/**", "readme.txt", "plugin.properties", "jetty-dir.css"
 
 	// include only the classes which will be used to start Embedded Jetty
-	from "$buildDir/classes/main"
+	from "$buildDir/classes/java/main"
 	exclude "com/myapp/"
 	
 	// tells the class to run when the generate war be executed using 'java -jar'
