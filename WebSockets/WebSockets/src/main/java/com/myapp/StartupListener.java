@@ -7,12 +7,17 @@ import jakarta.servlet.annotation.WebListener;
 @WebListener
 public class StartupListener implements jakarta.servlet.ServletContextListener {
 
+    private EventGenerator eventGenerator;
+
     public void contextInitialized(ServletContextEvent sce) {
-	new EventGenerator().start();
+        eventGenerator = new EventGenerator();
+        eventGenerator.start();
     }
 
 	@Override
 	public void contextDestroyed(ServletContextEvent sce) {
-		// TODO Auto-generated method stub
+		if (eventGenerator != null) {
+            eventGenerator.interrupt();
+        }
 	}
 }

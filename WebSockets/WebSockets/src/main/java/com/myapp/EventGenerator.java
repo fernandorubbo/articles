@@ -16,7 +16,7 @@ public class EventGenerator extends Thread {
 	}
 
 	private static synchronized void broadcast() {
-		Event event = Event.buildNextRandomically();		
+		Event event = Event.buildNextRandomically();
 		for (Observer observer : observers) {
 			observer.notify(event);
 		}
@@ -24,13 +24,14 @@ public class EventGenerator extends Thread {
 
 	@Override
 	public void run() {
-		while (true) {
+		while (!isInterrupted()) {
 			try {
 				Thread.sleep(5000);
 
 				broadcast();
 
 			} catch (InterruptedException e) {
+				interrupt();
 				e.printStackTrace();
 			}
 		}
