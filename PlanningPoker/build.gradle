@@ -2,8 +2,6 @@ import org.gradle.api.file.DuplicatesStrategy
 
 apply plugin: 'war'
 apply plugin: 'eclipse-wtp'
-//apply from: 'https://raw.github.com/akhikhl/gretty/master/pluginScripts/gretty.plugin'
-
 
 java {
     sourceCompatibility = 21
@@ -14,28 +12,16 @@ repositories {
     mavenCentral()
 }
 
-/*
-gretty {
-  servletContainer = 'jetty9'
-}
-*/
-
 wrapper {
 	gradleVersion = '9.0.0'
 }
 
-// Fills out all dependencies which are necessary to start the embedded jetty into our war file
 configurations {
 	embeddedJetty
 }
 
 configurations.all {
 	resolutionStrategy {
-	  eachDependency { DependencyResolveDetails details ->
-		  println details.requested.name + "-" + details.requested.version
-		  println details.target.name + "-" + details.target.version
-	  }
- 
 	  // cache dynamic versions for 10 minutes
 	  cacheDynamicVersionsFor 10*60, 'seconds'
 	  // don't cache changing modules at all
@@ -54,21 +40,29 @@ dependencies {
 
     // JSON library
     implementation 'org.glassfish:jakarta.json:2.0.1'
+
+    // Testing
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.0'
+    // Needed for parameterized tests
+    testImplementation 'org.junit.jupiter:junit-jupiter-params:5.10.0'
+    // Needed if you want to use the launcher for other purposes
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+    // Mockito
+    testImplementation 'org.mockito:mockito-core:5.10.0'
+    testImplementation 'org.mockito:mockito-junit-jupiter:5.10.0'
+}
+
+
+test {
+    useJUnitPlatform()
 }
 
 
 task mytask {
 	doLast {
 		println configurations.embeddedJetty.resolutionStrategy.forcedModules
-		/*
-		configurations.collect {
-			println '--' + it
-			it.collect(){
-				println it
-				println it.name
-			}
-		}
-		*/
 	}
 }
 
@@ -98,6 +92,10 @@ war {
 
 // Once you will need some basic api (e.i. servlet api) for compilation, add embeddedJetty dependencies for compilation
 sourceSets.main.compileClasspath += configurations.embeddedJetty
+
+// Test classpath should also include embeddedJetty dependencies
+sourceSets.test.compileClasspath += configurations.embeddedJetty
+sourceSets.test.runtimeClasspath += configurations.embeddedJetty
 
 // the same for eclipse classpath, so you can use it to edit your java files
 eclipse {

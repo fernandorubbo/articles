@@ -18,6 +18,10 @@ public class WebSocketObserver implements Observer {
 		this.session = session;
 	}
 
+	public Session getSession() {
+		return session;
+	}
+
 	@Override
 	public void newGame(Game game) {
 		send(new JSFunction("newGame", "id", game.getId()));
