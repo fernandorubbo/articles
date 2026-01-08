@@ -21,6 +21,7 @@ import org.eclipse.jetty.websocket.api.annotations.WebSocket;
 import com.planningpoker.model.Game;
 import com.planningpoker.model.Play;
 import com.planningpoker.model.Player;
+import com.planningpoker.model.observer.Observer;
 import com.planningpoker.web.Games;
 
 @WebSocket
@@ -128,8 +129,17 @@ public class PlanningPokerWebSocket {
 		out.println("==>> Closing connection " + session.getRemoteSocketAddress() + " - " + gameId + " - " + playerName);
 
 		Game game = Games.getGame(gameId);
-		if(game==null)
-			game = Games.getGameByManagerName(playerName);
+		if(game==null) {
+			game = Games.findGame(g -> {
+				for(Player p : g.getPlayers()) {
+					Observer obs = p.getObserver();
+					if (obs instanceof WebSocketObserver && ((WebSocketObserver)obs).getSession().equals(session)) {
+						return true;
+					}
+				}
+				return false;
+			});
+		}
 
 		if(game!=null)
 			game.getPlayer(playerName).offline();
