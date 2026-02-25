@@ -31,27 +31,27 @@ configurations.all {
 
 dependencies {
     // Jetty 12
-    embeddedJetty 'org.eclipse.jetty.ee10:jetty-ee10-servlet:12.0.10'
-    embeddedJetty 'org.eclipse.jetty.ee10:jetty-ee10-webapp:12.0.10'
-    embeddedJetty 'org.eclipse.jetty.ee10:jetty-ee10-plus:12.0.10'
-    embeddedJetty 'org.eclipse.jetty.ee10:jetty-ee10-annotations:12.0.10'
-    embeddedJetty 'org.eclipse.jetty.ee10:jetty-ee10-apache-jsp:12.0.10'
-    embeddedJetty 'org.eclipse.jetty.ee10.websocket:jetty-ee10-websocket-jetty-server:12.0.10'
+    embeddedJetty 'org.eclipse.jetty.ee10:jetty-ee10-servlet:12.1.6'
+    embeddedJetty 'org.eclipse.jetty.ee10:jetty-ee10-webapp:12.1.6'
+    embeddedJetty 'org.eclipse.jetty.ee10:jetty-ee10-plus:12.1.6'
+    embeddedJetty 'org.eclipse.jetty.ee10:jetty-ee10-annotations:12.1.6'
+    embeddedJetty 'org.eclipse.jetty.ee10:jetty-ee10-apache-jsp:12.1.6'
+    embeddedJetty 'org.eclipse.jetty.ee10.websocket:jetty-ee10-websocket-jetty-server:12.1.6'
 
     // JSON library
     implementation 'org.glassfish:jakarta.json:2.0.1'
 
     // Testing
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.0'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.11.4'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.11.4'
     // Needed for parameterized tests
-    testImplementation 'org.junit.jupiter:junit-jupiter-params:5.10.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-params:5.11.4'
     // Needed if you want to use the launcher for other purposes
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
     // Mockito
-    testImplementation 'org.mockito:mockito-core:5.10.0'
-    testImplementation 'org.mockito:mockito-junit-jupiter:5.10.0'
+    testImplementation 'org.mockito:mockito-core:5.21.0'
+    testImplementation 'org.mockito:mockito-junit-jupiter:5.21.0'
 }
 
 
